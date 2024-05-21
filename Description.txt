@@ -1,0 +1,47 @@
+Event-
+   eventId
+   Name
+   Start date
+   End Date
+   Location
+   Event type(Conference,Seminar)
+   Banner Image
+   Price
+   venueId
+User-
+  Name
+  Email
+  Phone number
+  Password
+  Role-Admin/Attendee
+Venue-
+  venueId
+  Name
+  Email
+  Location
+  Address  
+  attendeeCount
+  Phone number
+  List of events
+Ticket-
+  eventId
+  ticketId
+  userId
+  price
+order-
+  orderid
+  totalprice 
+  date
+
+Endpoints-
+Event Creation 
+Event Retrieval 
+User/Speaker Registration 
+View User/Speaker 
+Ticketing
+Ongoing Events
+Past Events
+Avaiable venue
+All order
+create order
+  
