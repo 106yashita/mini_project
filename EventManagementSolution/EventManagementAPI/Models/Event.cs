@@ -8,14 +8,7 @@ namespace EventManagementAPI.Models
         public string EventName { get; set; }
         public string EventDescription { get; set; }
         public string EventType { get; set; }
-        public int StartDate { get; set; }
-        public int EndDate { get; set; }
-        public int VenueId { get; set; }
-        [ForeignKey("VenueId")]
-        public Venue venue { get; set; }
-
-        public ICollection<Ticket> Tickets { get; set; }
-        public ICollection<Speaker> Speakers { get; set; }
-
+        public DateTime Date { get; set; }
+        public string location { get; set; }       
     }
 }

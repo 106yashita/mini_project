@@ -8,7 +8,7 @@
         public string Password { get; set; } = string.Empty;
         public string UserType { get; set; } = string.Empty;
 
-        public ICollection<Order> Orders { get; set; }
+        public ICollection<EventRequest> eventRequests { get; set; }
        
     }
 }

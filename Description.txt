@@ -1,87 +1,70 @@
-1. Event: This table stores information about events.
-event_id: This is a unique identifier for each event, often an auto-incrementing integer value.
-name: The name of the event.
-description: A detailed description of the event, including its purpose, agenda, etc.
-start and end date: The date on which the event start and end.
-location: The venue where the event takes place (reference to Venue table using a foreign key).
+User-
+UserId (PK)
+HashedPassword
+Role (Client, Admin)
+CreatedDate
+Email
+FullName
+PhoneNumber
+
+Event-
+EventId (PK)
+EventName
+Description
+Location
+time/date
+CreatedDate
+
+EventRequest-
+EventRequestId (PK)
+UserId (FK)
+EventId (FK)
+Capacity
+EventLocation (OwnVenue, PrivateVenue)
+EntertainmentDetails
+SpecialInstruction
+EventDate
+EventType
+FoodPreference
+AdditionalRequirements
+Status (Pending, Accepted, Rejected) (By Admin)
+RequestedDate
+
+EventResponse-
+EventResponseId (PK)
+EventRequestId (FK)
+Amount (By the admin)
+ResponseMessage
+Status (Pending, Accepted, Rejected) (By Client)
+ResponseDate
+
+Payment-
+PaymentId (PK)
+EventResponsetId (FK)
+Amount
+PaymentDate
+PaymentStatus (Pending, Completed, Failed)
+PaymentMethod (CreditCard, PayPal, etc.)
+
+Review-
+ReviewId (PK)
+EventResponseId (FK)
+EventId (FK)
+UserId (FK)
+Rating
+Comments
+ReviewDate
 
 
-2. User: This table stores user information.
-user_id: This is a unique identifier for each user, often an auto-incrementing integer value.
-name: The user’s full name.
-email: It is an users email address which is used for login and communication purposes.
-password: The user’s password for secure login (needs to be hashed and stored securely).
-user_type: This specifies the type of user (e.g., organizer, attendee, administrator).
-
-3. Venue: This table stores information about event venues.
-venue_id: This is a unique identifier for each venue, often an auto-incrementing integer value.
-name: The name of the venue.
-address: The full address of the venue.
-capacity: The maximum number of people the venue can hold.
-location: It is a name of city where the venue is located.
-contact number : contact information of the venue
-
-4. Ticket: This table stores information about individual tickets for attending events.
-ticket_id: This is a unique identifier for each ticket, often an auto-incrementing integer value.
-event_id: The event this ticket is associated with (foreign key referencing the Event table).
-order_id: The order this ticket belongs to (foreign key referencing the Order table).
-price: The price paid for the ticket.
-type: It shows the type of ticket for examples: “General Admission”, “VIP”.
-seat_number: The seat number associated with this ticket.
-
-
-5. Order: This table stores information about ticket orders placed by users.
-order_id: This is a unique identifier for each order, often an auto-incrementing integer value.
-user_id: The user who placed the order (foreign key referencing the User table).
-date: The date the order was placed.
-total_price: The total price of all tickets in the order.
-payment_id: The payment method used for the order (foreign key referencing the Payment table).
-
-
-6. Payment: This table stores information about payments made for orders.
-payment_id: This is a unique identifier for each payment, often an auto-incrementing integer value.
-order_id: The order associated with the payment (foreign key referencing the Order table).
-payment_method: The method used for payment (e.g., “Credit Card”, “PayPal”).
-transaction_id: The unique identifier provided by the payment gateway for the transaction.
-
-
-7. Speaker: This table stores information about speakers participating in events.
-speaker_id: This is a unique identifier for each speaker, often an auto-incrementing integer value.
-name: The speaker’s full name.
-bio: A brief biography or description of the speaker.
-event_id: The event the speaker is participating in (foreign key referencing the Event table).
-
-
-Relationships Between These Entities
-1. Event – Venue Relationship:
-It Represents One to Many Relationship.
-One event can occur at one venue, but a venue can host many events.
-2. Event – Ticket Relationship:
-It Represents One to Many Relationship.
-One event can have many tickets, but a ticket belongs to only one event.
-3. User – Order Relationship:
-It Represents One to Many Relationship.
-One user can place many orders, but an order belongs to only one user.
-4. Order – Ticket Relationship:
-It Represents One to Many Relationship.
-One order can contain multiple tickets , while a ticket belongs to a single order.
-5. Order – Payment Relationship:
-It Represents One to One Relationship.
-1:1 – One order is associated with only one payment, and vice versa .
-6. Event – Speaker Relationship:
-It Represents Many to Many Relationship.
-An event can have multiple speakers and a speaker can participate in multiple events. 
-This is a many-to-many relationship.
 
 Endpoints-
 Event Creation 
 Event Retrieval 
-User/Speaker Registration 
-View User/Speaker 
-Ticketing
-Ongoing Events
-Past Events
-Avaiable venue
-All order
-create order
+User/Admin Registration 
+View User/Admin 
+EventRequest
+EventResponse
+Updatestatus of request(admin)
+Updatestatus of response(client)
+Make booking
   

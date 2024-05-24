@@ -9,12 +9,10 @@ namespace EventManagementAPI.Contexts
         {
         }
         public DbSet<Event> Events { get; set; }
-        public DbSet<Order> Orders { get; set; }
-        public DbSet<Payment> Payments { get; set; }
-        public DbSet<Speaker> Speakers { get; set; }
-        public DbSet<Ticket> Tickets { get; set; }
+        public DbSet<Booking> Bookings { get; set; }
+        public DbSet<EventRequest> EventRequests { get; set; }
+        public DbSet<EventResponse> EventResponses { get; set; }
         public DbSet<User> Users{ get; set; }
-        public DbSet<Venue> Venues { get; set; }
 
 
     }
