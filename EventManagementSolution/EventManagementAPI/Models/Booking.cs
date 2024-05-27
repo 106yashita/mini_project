@@ -7,7 +7,7 @@ namespace EventManagementAPI.Models
         public int BookingId { get; set; }
         public int UserId { get; set; }
         [ForeignKey("UserId")]
-        public User user { get; set; }
+        public UserProfile userProfile { get; set; }
         public DateTime Date { get; set; }
         public int TotalPrice { get; set; }
         public string Status { get; set; }

@@ -1,14 +1,19 @@
-﻿namespace EventManagementAPI.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+
+namespace EventManagementAPI.Models
 {
     public class User
     {
-        public int UserId { get; set; }
-        public string UserName { get; set; } = string.Empty;
-        public string Email { get; set; } = string.Empty;
-        public string Password { get; set; } = string.Empty;
-        public string UserType { get; set; } = string.Empty;
+        [Key]
+        public int UserProfileId { get; set; }
+        public byte[] Password { get; set; }
+        public byte[] PasswordHashKey { get; set; }
+
+        [ForeignKey("UserProfileId")]
+        public UserProfile userProfile { get; set; }
 
         public ICollection<EventRequest> eventRequests { get; set; }
-       
+
     }
 }

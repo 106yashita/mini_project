@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EventManagementAPI.Migrations
 {
     [DbContext(typeof(EventManagementContext))]
-    [Migration("20240524061540_First")]
-    partial class First
+    [Migration("20240526121539_first")]
+    partial class first
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -136,6 +136,9 @@ namespace EventManagementAPI.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
+                    b.Property<int?>("UserTempId")
+                        .HasColumnType("int");
+
                     b.Property<string>("location")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -145,6 +148,8 @@ namespace EventManagementAPI.Migrations
                     b.HasIndex("EventId");
 
                     b.HasIndex("UserId");
+
+                    b.HasIndex("UserTempId");
 
                     b.ToTable("EventRequests");
                 });
@@ -183,17 +188,28 @@ namespace EventManagementAPI.Migrations
 
             modelBuilder.Entity("EventManagementAPI.Models.User", b =>
                 {
-                    b.Property<int>("UserId")
-                        .ValueGeneratedOnAdd()
+                    b.Property<int>("UserProfileId")
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"), 1L, 1);
+                    b.Property<byte[]>("Password")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<byte[]>("PasswordHashKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.HasKey("UserProfileId");
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("EventManagementAPI.Models.UserProfile", b =>
+                {
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
 
                     b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -202,12 +218,11 @@ namespace EventManagementAPI.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserType")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("UserId");
+                    b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("UserProfiles");
                 });
 
             modelBuilder.Entity("EventManagementAPI.Models.Booking", b =>
@@ -218,7 +233,7 @@ namespace EventManagementAPI.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("EventManagementAPI.Models.User", "user")
+                    b.HasOne("EventManagementAPI.Models.UserProfile", "userProfile")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -226,7 +241,7 @@ namespace EventManagementAPI.Migrations
 
                     b.Navigation("eventResponse");
 
-                    b.Navigation("user");
+                    b.Navigation("userProfile");
                 });
 
             modelBuilder.Entity("EventManagementAPI.Models.EventRequest", b =>
@@ -237,15 +252,19 @@ namespace EventManagementAPI.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("EventManagementAPI.Models.User", "User")
-                        .WithMany("eventRequests")
+                    b.HasOne("EventManagementAPI.Models.UserProfile", "userProfile")
+                        .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("EventManagementAPI.Models.User", null)
+                        .WithMany("eventRequests")
+                        .HasForeignKey("UserTempId");
+
                     b.Navigation("Event");
 
-                    b.Navigation("User");
+                    b.Navigation("userProfile");
                 });
 
             modelBuilder.Entity("EventManagementAPI.Models.EventResponse", b =>
@@ -257,6 +276,17 @@ namespace EventManagementAPI.Migrations
                         .IsRequired();
 
                     b.Navigation("EventRequest");
+                });
+
+            modelBuilder.Entity("EventManagementAPI.Models.User", b =>
+                {
+                    b.HasOne("EventManagementAPI.Models.UserProfile", "userProfile")
+                        .WithMany()
+                        .HasForeignKey("UserProfileId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("userProfile");
                 });
 
             modelBuilder.Entity("EventManagementAPI.Models.User", b =>

@@ -64,3 +64,5 @@ C:\Users\VC\Desktop\mini_project\EventManagementSolution\EventManagementAPI\obj\
 C:\Users\VC\Desktop\mini_project\EventManagementSolution\EventManagementAPI\obj\Debug\net8.0\EventManagementAPI.pdb
 C:\Users\VC\Desktop\mini_project\EventManagementSolution\EventManagementAPI\obj\Debug\net8.0\EventManagementAPI.genruntimeconfig.cache
 C:\Users\VC\Desktop\mini_project\EventManagementSolution\EventManagementAPI\obj\Debug\net8.0\ref\EventManagementAPI.dll
+C:\Users\VC\Desktop\mini_project\EventManagementSolution\EventManagementAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\VC\Desktop\mini_project\EventManagementSolution\EventManagementAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll

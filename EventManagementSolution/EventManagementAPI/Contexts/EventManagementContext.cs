@@ -13,7 +13,13 @@ namespace EventManagementAPI.Contexts
         public DbSet<EventRequest> EventRequests { get; set; }
         public DbSet<EventResponse> EventResponses { get; set; }
         public DbSet<User> Users{ get; set; }
+        public DbSet<UserProfile> UserProfiles { get; set; }
 
-
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<UserProfile>()
+                .Property(p => p.Id)
+                .ValueGeneratedNever(); 
+        }
     }
 }

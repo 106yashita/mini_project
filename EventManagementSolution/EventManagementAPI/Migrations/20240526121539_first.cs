@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace EventManagementAPI.Migrations
 {
-    public partial class First : Migration
+    public partial class first : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -27,19 +27,36 @@ namespace EventManagementAPI.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Users",
+                name: "UserProfiles",
                 columns: table => new
                 {
-                    UserId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<int>(type: "int", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UserType = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    UserType = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Users", x => x.UserId);
+                    table.PrimaryKey("PK_UserProfiles", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Users",
+                columns: table => new
+                {
+                    UserProfileId = table.Column<int>(type: "int", nullable: false),
+                    Password = table.Column<byte[]>(type: "varbinary(max)", nullable: false),
+                    PasswordHashKey = table.Column<byte[]>(type: "varbinary(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Users", x => x.UserProfileId);
+                    table.ForeignKey(
+                        name: "FK_Users_UserProfiles_UserProfileId",
+                        column: x => x.UserProfileId,
+                        principalTable: "UserProfiles",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -58,7 +75,8 @@ namespace EventManagementAPI.Migrations
                     RequestStatus = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     EntertainmentDetails = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     SpecialInstruction = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FoodPreferences = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    FoodPreferences = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UserTempId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -70,11 +88,16 @@ namespace EventManagementAPI.Migrations
                         principalColumn: "EventId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_EventRequests_Users_UserId",
+                        name: "FK_EventRequests_UserProfiles_UserId",
                         column: x => x.UserId,
-                        principalTable: "Users",
-                        principalColumn: "UserId",
+                        principalTable: "UserProfiles",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_EventRequests_Users_UserTempId",
+                        column: x => x.UserTempId,
+                        principalTable: "Users",
+                        principalColumn: "UserProfileId");
                 });
 
             migrationBuilder.CreateTable(
@@ -123,10 +146,10 @@ namespace EventManagementAPI.Migrations
                         principalColumn: "EventResponseId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Bookings_Users_UserId",
+                        name: "FK_Bookings_UserProfiles_UserId",
                         column: x => x.UserId,
-                        principalTable: "Users",
-                        principalColumn: "UserId",
+                        principalTable: "UserProfiles",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.NoAction);
                 });
 
@@ -151,6 +174,11 @@ namespace EventManagementAPI.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_EventRequests_UserTempId",
+                table: "EventRequests",
+                column: "UserTempId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_EventResponses_EventRequestId",
                 table: "EventResponses",
                 column: "EventRequestId");
@@ -172,6 +200,9 @@ namespace EventManagementAPI.Migrations
 
             migrationBuilder.DropTable(
                 name: "Users");
+
+            migrationBuilder.DropTable(
+                name: "UserProfiles");
         }
     }
 }

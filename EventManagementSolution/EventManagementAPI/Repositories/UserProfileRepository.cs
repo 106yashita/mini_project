@@ -3,25 +3,24 @@ using EventManagementAPI.Exceptions;
 using EventManagementAPI.Interfaces;
 using EventManagementAPI.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace EventManagementAPI.Repositories
 {
-    public class UserRepository : IRepository<int, User>
+    public class UserProfileRepository : IRepository<int, UserProfile>
     {
         private readonly EventManagementContext _context;
-        public UserRepository(EventManagementContext context)
+        public UserProfileRepository(EventManagementContext context)
         {
             _context = context;
         }
-        public async Task<User> Add(User item)
+        public async Task<UserProfile> Add(UserProfile item)
         {
             _context.Add(item);
             await _context.SaveChangesAsync();
             return item;
         }
 
-        public async Task<User> Delete(int key)
+        public async Task<UserProfile> Delete(int key)
         {
             var user = await Get(key);
             if (user != null)
@@ -33,21 +32,21 @@ namespace EventManagementAPI.Repositories
             throw new NoSuchUserException();
         }
 
-        public async Task<User> Get(int key)
+        public async Task<UserProfile> Get(int key)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(e => e.UserId == key);
+            var user = (await _context.UserProfiles.FirstOrDefaultAsync(u => u.Id == key));
             return user;
         }
 
-        public async Task<IEnumerable<User>> GetAll()
+        public async Task<IEnumerable<UserProfile>> GetAll()
         {
-            var users = await _context.Users.ToListAsync();
+            var users = await _context.UserProfiles.ToListAsync();
             return users;
         }
 
-        public async Task<User> Update(User item)
+        public async Task<UserProfile> Update(UserProfile item)
         {
-            var user = await Get(item.UserId);
+            var user = await Get(item.Id);
             if (user != null)
             {
                 _context.Update(item);
