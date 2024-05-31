@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagementAPI", "EventManagementAPI\EventManagementAPI.csproj", "{BF33ADB6-77D6-4C69-A389-AC44B54FE353}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventManagementAPI", "EventManagementAPI\EventManagementAPI.csproj", "{BF33ADB6-77D6-4C69-A389-AC44B54FE353}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagementTest", "EventManagementTest\EventManagementTest.csproj", "{4C59E6DA-28C3-44D2-A179-05A6165541E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BF33ADB6-77D6-4C69-A389-AC44B54FE353}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF33ADB6-77D6-4C69-A389-AC44B54FE353}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF33ADB6-77D6-4C69-A389-AC44B54FE353}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C59E6DA-28C3-44D2-A179-05A6165541E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C59E6DA-28C3-44D2-A179-05A6165541E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C59E6DA-28C3-44D2-A179-05A6165541E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C59E6DA-28C3-44D2-A179-05A6165541E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

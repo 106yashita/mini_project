@@ -75,11 +75,18 @@ namespace EventManagementAPI
             builder.Services.AddScoped<IRepository<int, EventRequest>, EventRequestRepository>();
             builder.Services.AddScoped<IRepository<int, EventResponse>, EventResponseRepository>();
             builder.Services.AddScoped<IRepository<int, Booking>, BookingRepository>();
+            builder.Services.AddScoped<IRepository<int, ScheduledEvent>, ScheduledEventRepository>();
+            builder.Services.AddScoped<IScheduledEventRepository, ScheduledEventRepository>();
+
             #endregion repository
 
             #region services
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<ITokenService, TokenService>();
+            builder.Services.AddScoped<IAdminService, AdminService>();
+            builder.Services.AddScoped<IRequestService, EventRequestService>();
+            builder.Services.AddScoped<IResponseService, EventResponseService>();
+            builder.Services.AddScoped<IBookingService, BookingService>();
             #endregion services
 
             var app = builder.Build();

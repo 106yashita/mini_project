@@ -1,4 +1,6 @@
-﻿namespace EventManagementAPI.Interfaces
+﻿using EventManagementAPI.Models.DTOs;
+
+namespace EventManagementAPI.Interfaces
 {
     public interface IRepository<K, T> where T : class
     {

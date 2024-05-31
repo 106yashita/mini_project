@@ -14,6 +14,7 @@ namespace EventManagementAPI.Contexts
         public DbSet<EventResponse> EventResponses { get; set; }
         public DbSet<User> Users{ get; set; }
         public DbSet<UserProfile> UserProfiles { get; set; }
+        public DbSet<ScheduledEvent> ScheduledEvents { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

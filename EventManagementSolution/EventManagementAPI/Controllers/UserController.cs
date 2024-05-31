@@ -1,49 +1,35 @@
 ﻿using EventManagementAPI.Interfaces;
 using EventManagementAPI.Models;
-using EventManagementAPI.Models.DTOs;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EventManagementAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "user")]
     public class UserController : ControllerBase
     {
-        private readonly IUserService _userService;
-
-        public UserController(IUserService userService)
+        private readonly IResponseService _responseService;
+        public UserController(IResponseService responseService)
         {
-            _userService = userService;
+            _responseService = responseService;
         }
-        [HttpPost("Login")]
-        [ProducesResponseType(typeof(LoginReturnDTO), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status401Unauthorized)]
-        public async Task<ActionResult<LoginReturnDTO>> Login(UserLoginDTO userLoginDTO)
-        {
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    var result = await _userService.Login(userLoginDTO);
-                    return Ok(result);
-                }
-                catch (Exception ex)
-                {
-                    return Unauthorized(new ErrorModel(401, ex.Message));
-                }
-            }
-            return BadRequest("All details are not provided. Please check teh object");
-        }
-        [HttpPost("Register")]
-        [ProducesResponseType(typeof(UserProfile), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<UserProfile>> Register(UserRegisterDTO userDTO)
+        [HttpPut]
+        [Route("eventsResponseStatus")]
+        public async Task<IActionResult> EventResponseStatus(int responseId, string status)
         {
             try
             {
-                UserProfile result = await _userService.Register(userDTO);
-                return Ok(result);
+                EventResponse response = await _responseService.UpdateResponse(responseId, status);
+                return StatusCode(StatusCodes.Status201Created, new
+                {
+                    Message = "status updated successfully",
+                    response
+                });
             }
+
             catch (Exception ex)
             {
                 return BadRequest(new ErrorModel(501, ex.Message));

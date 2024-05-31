@@ -184,6 +184,42 @@ namespace EventManagementAPI.Migrations
                     b.ToTable("EventResponses");
                 });
 
+            modelBuilder.Entity("EventManagementAPI.Models.ScheduledEvent", b =>
+                {
+                    b.Property<int>("ScheduledEventId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ScheduledEventId"), 1L, 1);
+
+                    b.Property<int>("EventId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("EventRequestId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("EventResponseId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsCompleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("UserProfileId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ScheduledEventId");
+
+                    b.HasIndex("EventId");
+
+                    b.HasIndex("EventRequestId");
+
+                    b.HasIndex("EventResponseId");
+
+                    b.HasIndex("UserProfileId");
+
+                    b.ToTable("ScheduledEvents");
+                });
+
             modelBuilder.Entity("EventManagementAPI.Models.User", b =>
                 {
                     b.Property<int>("UserProfileId")
@@ -274,6 +310,41 @@ namespace EventManagementAPI.Migrations
                         .IsRequired();
 
                     b.Navigation("EventRequest");
+                });
+
+            modelBuilder.Entity("EventManagementAPI.Models.ScheduledEvent", b =>
+                {
+                    b.HasOne("EventManagementAPI.Models.Event", "Event")
+                        .WithMany()
+                        .HasForeignKey("EventId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EventManagementAPI.Models.EventRequest", "eventRequest")
+                        .WithMany()
+                        .HasForeignKey("EventRequestId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EventManagementAPI.Models.EventResponse", "eventResponse")
+                        .WithMany()
+                        .HasForeignKey("EventResponseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EventManagementAPI.Models.UserProfile", "userProfile")
+                        .WithMany()
+                        .HasForeignKey("UserProfileId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Event");
+
+                    b.Navigation("eventRequest");
+
+                    b.Navigation("eventResponse");
+
+                    b.Navigation("userProfile");
                 });
 
             modelBuilder.Entity("EventManagementAPI.Models.User", b =>
