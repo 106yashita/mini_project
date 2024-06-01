@@ -3,7 +3,7 @@
 namespace EventManagementAPI.Exceptions
 {
     [Serializable]
-    internal class UnauthorizedUserException : Exception
+    public class UnauthorizedUserException : Exception
     {
         string msg;
         public UnauthorizedUserException(string? message) : base(message)

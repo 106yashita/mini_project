@@ -3,7 +3,7 @@
 namespace EventManagementAPI.Exceptions
 {
     [Serializable]
-    internal class ResponseNotAcceptedException : Exception
+    public class ResponseNotAcceptedException : Exception
     {
         string message;
         public ResponseNotAcceptedException()

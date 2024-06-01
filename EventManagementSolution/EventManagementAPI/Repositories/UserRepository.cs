@@ -35,7 +35,7 @@ namespace EventManagementAPI.Repositories
 
         public async Task<User> Get(int key)
         {
-            var user = (await _context.Users.FirstOrDefaultAsync(u => u.UserProfileId == key)) ?? throw new Exception("No user with the given ID");
+            var user = (await _context.Users.FirstOrDefaultAsync(u => u.UserProfileId == key));
             return user;
         }
 

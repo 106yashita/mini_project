@@ -3,7 +3,7 @@
 namespace EventManagementAPI.Exceptions
 {
     [Serializable]
-    internal class UnableToRegisterException : Exception
+    public class UnableToRegisterException : Exception
     {
         string msg;
         public UnableToRegisterException(string? message) : base(message)

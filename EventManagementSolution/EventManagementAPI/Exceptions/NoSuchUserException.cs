@@ -4,7 +4,7 @@ namespace EventManagementAPI.Exceptions
 {
 
     [Serializable]
-    internal class NoSuchUserException : Exception
+    public class NoSuchUserException : Exception
     {
         string message;
         public NoSuchUserException()

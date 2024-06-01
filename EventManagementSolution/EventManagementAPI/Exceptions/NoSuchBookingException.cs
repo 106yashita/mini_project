@@ -3,7 +3,7 @@
 namespace EventManagementAPI.Exceptions
 {
     [Serializable]
-    internal class NoSuchBookingException : Exception
+    public class NoSuchBookingException : Exception
     {
         string message;
         public NoSuchBookingException()

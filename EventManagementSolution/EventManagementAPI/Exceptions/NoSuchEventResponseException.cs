@@ -3,7 +3,7 @@
 namespace EventManagementAPI.Exceptions
 {
     [Serializable]
-    internal class NoSuchEventResponseException : Exception
+    public class NoSuchEventResponseException : Exception
     {
         string message;
         public NoSuchEventResponseException()

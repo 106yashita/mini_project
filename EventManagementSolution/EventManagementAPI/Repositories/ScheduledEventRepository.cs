@@ -80,41 +80,6 @@ namespace EventManagementAPI.Repositories
             return scheduledEvents;
         }
 
-        public async Task<ScheduledEvent> GetScheduledEventByEventResponseId(int eventResponseId)
-        {
-            ScheduledEvent scheduledEvent = await _context.ScheduledEvents.FirstOrDefaultAsync(s => s.EventResponseId == eventResponseId);
-            return scheduledEvent;
-        }
-
-        public async Task<ScheduledEvent> GetScheduledEventByUserId(int userId)
-        {
-            ScheduledEvent scheduledEvent = await _context.ScheduledEvents.FirstOrDefaultAsync(s => s.UserProfileId == userId);
-            return scheduledEvent;
-        }
-
-        public  async Task<List<ScheduledEventListDTO>> GetUserScheduledEvents(int userId)
-        {
-            var scheduledEvents = await _context.ScheduledEvents
-                .Where(e=> e.UserProfileId == userId)
-                .Select(e => new ScheduledEventListDTO
-                {
-                    ScheduledEventId = e.ScheduledEventId,
-                    EventType = e.Event.EventName,
-                    Venue = e.eventRequest.location,
-                    Capacity = e.eventRequest.Capacity,
-                    EntertainmentDetails = e.eventRequest.EntertainmentDetails,
-                    SpecialInstruction = e.eventRequest.SpecialInstruction,
-                    FoodPreferences = e.eventRequest.FoodPreferences,
-                    EventDate = e.eventRequest.RequestedDate,
-                    RequestDate = e.eventRequest.DateTime,
-                    IsCompleted = e.IsCompleted
-
-                })
-                .OrderBy(e => e.EventDate)
-                .ToListAsync();
-            return scheduledEvents;
-        }
-
        
     }
 }
