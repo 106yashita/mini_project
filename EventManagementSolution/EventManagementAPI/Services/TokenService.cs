@@ -1,12 +1,14 @@
 ﻿using EventManagementAPI.Interfaces;
 using EventManagementAPI.Models;
 using Microsoft.IdentityModel.Tokens;
+using System.Diagnostics.CodeAnalysis;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
 namespace EventManagementAPI.Services
 {
+    [ExcludeFromCodeCoverage]
     public class TokenService : ITokenService
     {
         private readonly string _secretKey;
