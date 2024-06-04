@@ -3,52 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BF33ADB6-77D6-4C69-A389-AC44B54FE353}|EventManagementAPI\\EventManagementAPI.csproj|c:\\users\\vc\\desktop\\mini_project\\eventmanagementsolution\\eventmanagementapi\\services\\eventrequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF33ADB6-77D6-4C69-A389-AC44B54FE353}|EventManagementAPI\\EventManagementAPI.csproj|solutionrelative:eventmanagementapi\\services\\eventrequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF33ADB6-77D6-4C69-A389-AC44B54FE353}|EventManagementAPI\\EventManagementAPI.csproj|c:\\users\\vc\\desktop\\mini_project\\eventmanagementsolution\\eventmanagementapi\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF33ADB6-77D6-4C69-A389-AC44B54FE353}|EventManagementAPI\\EventManagementAPI.csproj|solutionrelative:eventmanagementapi\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF33ADB6-77D6-4C69-A389-AC44B54FE353}|EventManagementAPI\\EventManagementAPI.csproj|c:\\users\\vc\\desktop\\mini_project\\eventmanagementsolution\\eventmanagementapi\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF33ADB6-77D6-4C69-A389-AC44B54FE353}|EventManagementAPI\\EventManagementAPI.csproj|solutionrelative:eventmanagementapi\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C59E6DA-28C3-44D2-A179-05A6165541E4}|EventManagementTest\\EventManagementTest.csproj|c:\\users\\vc\\desktop\\mini_project\\eventmanagementsolution\\eventmanagementtest\\servicetests\\adminservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C59E6DA-28C3-44D2-A179-05A6165541E4}|EventManagementTest\\EventManagementTest.csproj|solutionrelative:eventmanagementtest\\servicetests\\adminservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF33ADB6-77D6-4C69-A389-AC44B54FE353}|EventManagementAPI\\EventManagementAPI.csproj|c:\\users\\vc\\desktop\\mini_project\\eventmanagementsolution\\eventmanagementapi\\models\\dtos\\updateeventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF33ADB6-77D6-4C69-A389-AC44B54FE353}|EventManagementAPI\\EventManagementAPI.csproj|solutionrelative:eventmanagementapi\\models\\dtos\\updateeventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BF33ADB6-77D6-4C69-A389-AC44B54FE353}|EventManagementAPI\\EventManagementAPI.csproj|c:\\users\\vc\\desktop\\mini_project\\eventmanagementsolution\\eventmanagementapi\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF33ADB6-77D6-4C69-A389-AC44B54FE353}|EventManagementAPI\\EventManagementAPI.csproj|solutionrelative:eventmanagementapi\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C59E6DA-28C3-44D2-A179-05A6165541E4}|EventManagementTest\\EventManagementTest.csproj|c:\\users\\vc\\desktop\\mini_project\\eventmanagementsolution\\eventmanagementtest\\repositorytests\\scheduledeventrepotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C59E6DA-28C3-44D2-A179-05A6165541E4}|EventManagementTest\\EventManagementTest.csproj|solutionrelative:eventmanagementtest\\repositorytests\\scheduledeventrepotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4C59E6DA-28C3-44D2-A179-05A6165541E4}|EventManagementTest\\EventManagementTest.csproj|c:\\users\\vc\\desktop\\mini_project\\eventmanagementsolution\\eventmanagementtest\\servicetests\\bookingservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C59E6DA-28C3-44D2-A179-05A6165541E4}|EventManagementTest\\EventManagementTest.csproj|solutionrelative:eventmanagementtest\\servicetests\\bookingservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C59E6DA-28C3-44D2-A179-05A6165541E4}|EventManagementTest\\EventManagementTest.csproj|c:\\users\\vc\\desktop\\mini_project\\eventmanagementsolution\\eventmanagementtest\\servicetests\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C59E6DA-28C3-44D2-A179-05A6165541E4}|EventManagementTest\\EventManagementTest.csproj|solutionrelative:eventmanagementtest\\servicetests\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4C59E6DA-28C3-44D2-A179-05A6165541E4}|EventManagementTest\\EventManagementTest.csproj|c:\\users\\vc\\desktop\\mini_project\\eventmanagementsolution\\eventmanagementtest\\servicetests\\eventresponseservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C59E6DA-28C3-44D2-A179-05A6165541E4}|EventManagementTest\\EventManagementTest.csproj|solutionrelative:eventmanagementtest\\servicetests\\eventresponseservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF33ADB6-77D6-4C69-A389-AC44B54FE353}|EventManagementAPI\\EventManagementAPI.csproj|c:\\users\\vc\\desktop\\mini_project\\eventmanagementsolution\\eventmanagementapi\\models\\dtos\\createeventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF33ADB6-77D6-4C69-A389-AC44B54FE353}|EventManagementAPI\\EventManagementAPI.csproj|solutionrelative:eventmanagementapi\\models\\dtos\\createeventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF33ADB6-77D6-4C69-A389-AC44B54FE353}|EventManagementAPI\\EventManagementAPI.csproj|c:\\users\\vc\\desktop\\mini_project\\eventmanagementsolution\\eventmanagementapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF33ADB6-77D6-4C69-A389-AC44B54FE353}|EventManagementAPI\\EventManagementAPI.csproj|solutionrelative:eventmanagementapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF33ADB6-77D6-4C69-A389-AC44B54FE353}|EventManagementAPI\\EventManagementAPI.csproj|c:\\users\\vc\\desktop\\mini_project\\eventmanagementsolution\\eventmanagementapi\\models\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF33ADB6-77D6-4C69-A389-AC44B54FE353}|EventManagementAPI\\EventManagementAPI.csproj|solutionrelative:eventmanagementapi\\models\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF33ADB6-77D6-4C69-A389-AC44B54FE353}|EventManagementAPI\\EventManagementAPI.csproj|c:\\users\\vc\\desktop\\mini_project\\eventmanagementsolution\\eventmanagementapi\\models\\dtos\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF33ADB6-77D6-4C69-A389-AC44B54FE353}|EventManagementAPI\\EventManagementAPI.csproj|solutionrelative:eventmanagementapi\\models\\dtos\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF33ADB6-77D6-4C69-A389-AC44B54FE353}|EventManagementAPI\\EventManagementAPI.csproj|c:\\users\\vc\\desktop\\mini_project\\eventmanagementsolution\\eventmanagementapi\\models\\dtos\\bookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF33ADB6-77D6-4C69-A389-AC44B54FE353}|EventManagementAPI\\EventManagementAPI.csproj|solutionrelative:eventmanagementapi\\models\\dtos\\bookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,162 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookingDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementAPI\\Models\\DTOs\\BookingDTO.cs",
+              "RelativeDocumentMoniker": "EventManagementAPI\\Models\\DTOs\\BookingDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementAPI\\Models\\DTOs\\BookingDTO.cs",
+              "RelativeToolTip": "EventManagementAPI\\Models\\DTOs\\BookingDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T06:50:59.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EventRequestService.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementAPI\\Services\\EventRequestService.cs",
-              "RelativeDocumentMoniker": "EventManagementAPI\\Services\\EventRequestService.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementAPI\\Services\\EventRequestService.cs",
-              "RelativeToolTip": "EventManagementAPI\\Services\\EventRequestService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T04:55:39.664Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UpdateEventDTO.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementAPI\\Models\\DTOs\\UpdateEventDTO.cs",
-              "RelativeDocumentMoniker": "EventManagementAPI\\Models\\DTOs\\UpdateEventDTO.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementAPI\\Models\\DTOs\\UpdateEventDTO.cs",
-              "RelativeToolTip": "EventManagementAPI\\Models\\DTOs\\UpdateEventDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T04:46:54.462Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "BookingService.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementAPI\\Services\\BookingService.cs",
               "RelativeDocumentMoniker": "EventManagementAPI\\Services\\BookingService.cs",
               "ToolTip": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementAPI\\Services\\BookingService.cs",
               "RelativeToolTip": "EventManagementAPI\\Services\\BookingService.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAowAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T04:32:15.628Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ScheduledEventRepoTest.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementTest\\RepositoryTests\\ScheduledEventRepoTest.cs",
-              "RelativeDocumentMoniker": "EventManagementTest\\RepositoryTests\\ScheduledEventRepoTest.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementTest\\RepositoryTests\\ScheduledEventRepoTest.cs",
-              "RelativeToolTip": "EventManagementTest\\RepositoryTests\\ScheduledEventRepoTest.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAgwC4AAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T04:30:00.337Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CreateEventDTO.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementAPI\\Models\\DTOs\\CreateEventDTO.cs",
-              "RelativeDocumentMoniker": "EventManagementAPI\\Models\\DTOs\\CreateEventDTO.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementAPI\\Models\\DTOs\\CreateEventDTO.cs",
-              "RelativeToolTip": "EventManagementAPI\\Models\\DTOs\\CreateEventDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T04:22:18.471Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AdminServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementTest\\ServiceTests\\AdminServiceTest.cs",
-              "RelativeDocumentMoniker": "EventManagementTest\\ServiceTests\\AdminServiceTest.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementTest\\ServiceTests\\AdminServiceTest.cs",
-              "RelativeToolTip": "EventManagementTest\\ServiceTests\\AdminServiceTest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIoAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T11:25:30.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AdminService.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementAPI\\Services\\AdminService.cs",
-              "RelativeDocumentMoniker": "EventManagementAPI\\Services\\AdminService.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementAPI\\Services\\AdminService.cs",
-              "RelativeToolTip": "EventManagementAPI\\Services\\AdminService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T11:25:03.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementAPI\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "EventManagementAPI\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementAPI\\Services\\UserService.cs",
-              "RelativeToolTip": "EventManagementAPI\\Services\\UserService.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACQAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T11:24:19.155Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UserProfile.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementAPI\\Models\\UserProfile.cs",
-              "RelativeDocumentMoniker": "EventManagementAPI\\Models\\UserProfile.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementAPI\\Models\\UserProfile.cs",
-              "RelativeToolTip": "EventManagementAPI\\Models\\UserProfile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T10:56:44.141Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UserRegisterDTO.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementAPI\\Models\\DTOs\\UserRegisterDTO.cs",
-              "RelativeDocumentMoniker": "EventManagementAPI\\Models\\DTOs\\UserRegisterDTO.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementAPI\\Models\\DTOs\\UserRegisterDTO.cs",
-              "RelativeToolTip": "EventManagementAPI\\Models\\DTOs\\UserRegisterDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T10:56:39.583Z",
+              "WhenOpened": "2024-06-04T06:45:22.081Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementAPI\\Services\\TokenService.cs",
-              "RelativeDocumentMoniker": "EventManagementAPI\\Services\\TokenService.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementAPI\\Services\\TokenService.cs",
-              "RelativeToolTip": "EventManagementAPI\\Services\\TokenService.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAA1wAoAAAAcAAAA",
+              "Title": "BookingServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementTest\\ServiceTests\\BookingServiceTest.cs",
+              "RelativeDocumentMoniker": "EventManagementTest\\ServiceTests\\BookingServiceTest.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementTest\\ServiceTests\\BookingServiceTest.cs",
+              "RelativeToolTip": "EventManagementTest\\ServiceTests\\BookingServiceTest.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAA2wGoAAAB4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T10:48:53.925Z",
+              "WhenOpened": "2024-06-04T06:42:29.943Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementTest\\ServiceTests\\UserServiceTest.cs",
-              "RelativeDocumentMoniker": "EventManagementTest\\ServiceTests\\UserServiceTest.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementTest\\ServiceTests\\UserServiceTest.cs",
-              "RelativeToolTip": "EventManagementTest\\ServiceTests\\UserServiceTest.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAIwFUAAABuAAAA",
+              "DocumentIndex": 2,
+              "Title": "EventResponseServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementTest\\ServiceTests\\EventResponseServiceTest.cs",
+              "RelativeDocumentMoniker": "EventManagementTest\\ServiceTests\\EventResponseServiceTest.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\mini_project\\EventManagementSolution\\EventManagementTest\\ServiceTests\\EventResponseServiceTest.cs",
+              "RelativeToolTip": "EventManagementTest\\ServiceTests\\EventResponseServiceTest.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAwwKgAAACCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T09:12:19.043Z",
+              "WhenOpened": "2024-06-04T06:46:10.97Z",
               "EditorCaption": ""
             }
           ]
