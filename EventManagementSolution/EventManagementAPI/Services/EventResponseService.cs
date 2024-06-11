@@ -39,6 +39,21 @@ namespace EventManagementAPI.Services
             return response.EventResponseId;
         }
 
+        public async Task<List<EventResponse>> GetAllEventResponse(int userId)
+        {
+            var eventResponses = await _eventResponsRepository.GetAll();
+            List<EventResponse> responses = new List<EventResponse>();
+            foreach (var eventResponse in eventResponses)
+            {
+               EventRequest request= await _eventRequestRepository.Get(eventResponse.EventRequestId);
+                if(request.UserId == userId)
+                {
+                    responses.Add(eventResponse);
+                }
+            }
+            return responses.ToList();
+        }
+
         public async Task<EventResponse> UpdateResponse(int responseId, string status)
         {
             EventResponse response = await _eventResponsRepository.Get(responseId);

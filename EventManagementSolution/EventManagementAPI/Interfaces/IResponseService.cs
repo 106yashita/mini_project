@@ -7,5 +7,6 @@ namespace EventManagementAPI.Interfaces
     {
         public Task<int> CreateEventResponse(ResponseDTO responseDTO);
         public Task<EventResponse> UpdateResponse(int responseId,string status);
+        public Task<List<EventResponse>> GetAllEventResponse(int userId);
     }
 }
