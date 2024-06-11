@@ -52,16 +52,17 @@ namespace EventManagementAPI.Services
 
         public async Task<UserProfile> Register(UserRegisterDTO profileDTO)
         {
-            UserProfile userProfile = null;
+            UserProfile userProfile = new UserProfile();
             User user = null;
             try
             {
-                userProfile = profileDTO;
+                userProfile.UserName=profileDTO.UserName;
+                userProfile.UserType= profileDTO.UserType;
+                userProfile.Email=profileDTO.Email;
                 user = MapProfileUserDTOToUser(profileDTO);
                 userProfile = await _userProfileRepo.Add(userProfile);
                 user.UserProfileId = userProfile.Id;
                 user = await _userRepo.Add(user);
-                ((UserRegisterDTO)userProfile).Password = string.Empty;
                 return userProfile;
             }
             catch (Exception) { }
@@ -95,7 +96,6 @@ namespace EventManagementAPI.Services
         private User MapProfileUserDTOToUser(UserRegisterDTO profileDTO)
         {
             User user = new User();
-            user.UserProfileId = profileDTO.Id;
             HMACSHA512 hMACSHA = new HMACSHA512();
             user.PasswordHashKey = hMACSHA.Key;
             user.Password = hMACSHA.ComputeHash(Encoding.UTF8.GetBytes(profileDTO.Password));

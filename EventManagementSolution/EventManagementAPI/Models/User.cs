@@ -6,6 +6,7 @@ namespace EventManagementAPI.Models
     public class User
     {
         [Key]
+        public int UserId { get; set; }
         public int UserProfileId { get; set; }
         public byte[] Password { get; set; }
         public byte[] PasswordHashKey { get; set; }

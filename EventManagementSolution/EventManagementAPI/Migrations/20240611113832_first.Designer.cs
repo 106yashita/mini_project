@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EventManagementAPI.Migrations
 {
     [DbContext(typeof(EventManagementContext))]
-    [Migration("20240529065648_second")]
-    partial class second
+    [Migration("20240611113832_first")]
+    partial class first
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -136,7 +136,7 @@ namespace EventManagementAPI.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("UserTempId")
+                    b.Property<int?>("UserId1")
                         .HasColumnType("int");
 
                     b.Property<string>("location")
@@ -149,7 +149,7 @@ namespace EventManagementAPI.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.HasIndex("UserTempId");
+                    b.HasIndex("UserId1");
 
                     b.ToTable("EventRequests");
                 });
@@ -206,9 +206,6 @@ namespace EventManagementAPI.Migrations
                     b.Property<bool>("IsCompleted")
                         .HasColumnType("bit");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
                     b.Property<int>("UserProfileId")
                         .HasColumnType("int");
 
@@ -220,15 +217,18 @@ namespace EventManagementAPI.Migrations
 
                     b.HasIndex("EventResponseId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("UserProfileId");
 
                     b.ToTable("ScheduledEvents");
                 });
 
             modelBuilder.Entity("EventManagementAPI.Models.User", b =>
                 {
-                    b.Property<int>("UserProfileId")
+                    b.Property<int>("UserId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"), 1L, 1);
 
                     b.Property<byte[]>("Password")
                         .IsRequired()
@@ -238,7 +238,12 @@ namespace EventManagementAPI.Migrations
                         .IsRequired()
                         .HasColumnType("varbinary(max)");
 
-                    b.HasKey("UserProfileId");
+                    b.Property<int>("UserProfileId")
+                        .HasColumnType("int");
+
+                    b.HasKey("UserId");
+
+                    b.HasIndex("UserProfileId");
 
                     b.ToTable("Users");
                 });
@@ -246,7 +251,10 @@ namespace EventManagementAPI.Migrations
             modelBuilder.Entity("EventManagementAPI.Models.UserProfile", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -299,7 +307,7 @@ namespace EventManagementAPI.Migrations
 
                     b.HasOne("EventManagementAPI.Models.User", null)
                         .WithMany("eventRequests")
-                        .HasForeignKey("UserTempId");
+                        .HasForeignKey("UserId1");
 
                     b.Navigation("Event");
 
@@ -339,7 +347,7 @@ namespace EventManagementAPI.Migrations
 
                     b.HasOne("EventManagementAPI.Models.UserProfile", "userProfile")
                         .WithMany()
-                        .HasForeignKey("UserId")
+                        .HasForeignKey("UserProfileId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

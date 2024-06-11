@@ -23,7 +23,7 @@ namespace EventManagementAPI.Services
             {
                 throw new NoSuchEventRequestException();
             }
-            if(eventRequest.RequestStatus == "decline")
+            if(eventRequest.RequestStatus == "denied")
             {
                 throw new RequestNotAcceptedException();
             }

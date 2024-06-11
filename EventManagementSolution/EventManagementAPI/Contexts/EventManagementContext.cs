@@ -15,12 +15,5 @@ namespace EventManagementAPI.Contexts
         public DbSet<User> Users{ get; set; }
         public DbSet<UserProfile> UserProfiles { get; set; }
         public DbSet<ScheduledEvent> ScheduledEvents { get; set; }
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<UserProfile>()
-                .Property(p => p.Id)
-                .ValueGeneratedNever(); 
-        }
     }
 }

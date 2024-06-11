@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.819894829097283" branch-rate="0.585365853658537" lines-covered="1871" lines-valid="2282" branches-covered="48" branches-valid="82" complexity="387" version="0" timestamp="1717503911">
+<coverage line-rate="0.809461805555556" branch-rate="0.546511627906977" lines-covered="1865" lines-valid="2304" branches-covered="47" branches-valid="86" complexity="392" version="0" timestamp="1718119457">
   <sources>
     <source>C:\Users\VC\</source>
   </sources>
   <packages>
-    <package name="EventManagementAPI" line-rate="0.621857923497268" branch-rate="0.585365853658537" complexity="266">
+    <package name="EventManagementAPI" line-rate="0.599786552828175" branch-rate="0.546511627906977" complexity="271">
       <classes>
         <class name="EventManagementAPI.Contexts.EventManagementContext" filename="C:\Users\VC\Desktop\mini_project\EventManagementSolution\EventManagementAPI\Contexts\EventManagementContext.cs" line-rate="1" branch-rate="1" complexity="9">
           <methods>
@@ -21,7 +21,7 @@
             </method>
             <method name="get_EventRequests" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="34" branch="false" />
+                <line number="13" hits="37" branch="false" />
               </lines>
             </method>
             <method name="get_EventResponses" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -67,7 +67,7 @@
             <line number="10" hits="12" branch="false" />
             <line number="11" hits="34" branch="false" />
             <line number="12" hits="20" branch="false" />
-            <line number="13" hits="34" branch="false" />
+            <line number="13" hits="37" branch="false" />
             <line number="14" hits="26" branch="false" />
             <line number="15" hits="21" branch="false" />
             <line number="16" hits="23" branch="false" />
@@ -92,109 +92,109 @@
             </method>
             <method name="CreateEvent" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
-                <line number="28" hits="0" branch="false" />
-                <line number="29" hits="0" branch="true" condition-coverage="0% (0/2)" />
-                <line number="30" hits="0" branch="false" />
-                <line number="32" hits="0" branch="false" />
+                <line number="29" hits="0" branch="false" />
+                <line number="30" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="31" hits="0" branch="false" />
                 <line number="33" hits="0" branch="false" />
                 <line number="34" hits="0" branch="false" />
-                <line number="36" hits="0" branch="false" />
+                <line number="35" hits="0" branch="false" />
                 <line number="37" hits="0" branch="false" />
                 <line number="38" hits="0" branch="false" />
-                <line number="42" hits="0" branch="false" />
+                <line number="39" hits="0" branch="false" />
                 <line number="43" hits="0" branch="false" />
-                <line number="45" hits="0" branch="false" />
+                <line number="44" hits="0" branch="false" />
+                <line number="46" hits="0" branch="false" />
               </lines>
             </method>
             <method name="EventRequestStatus" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="137" hits="0" branch="false" />
-                <line number="139" hits="0" branch="false" />
-                <line number="140" hits="0" branch="false" />
-                <line number="141" hits="0" branch="false" />
-                <line number="142" hits="0" branch="false" />
                 <line number="143" hits="0" branch="false" />
-                <line number="144" hits="0" branch="false" />
                 <line number="145" hits="0" branch="false" />
+                <line number="146" hits="0" branch="false" />
+                <line number="147" hits="0" branch="false" />
                 <line number="148" hits="0" branch="false" />
                 <line number="149" hits="0" branch="false" />
                 <line number="150" hits="0" branch="false" />
-                <line number="152" hits="0" branch="false" />
+                <line number="151" hits="0" branch="false" />
+                <line number="154" hits="0" branch="false" />
+                <line number="155" hits="0" branch="false" />
+                <line number="156" hits="0" branch="false" />
+                <line number="158" hits="0" branch="false" />
               </lines>
             </method>
             <method name="GetAllEvent" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="51" hits="0" branch="false" />
-                <line number="53" hits="0" branch="false" />
+                <line number="52" hits="0" branch="false" />
                 <line number="54" hits="0" branch="false" />
                 <line number="55" hits="0" branch="false" />
-                <line number="57" hits="0" branch="false" />
+                <line number="56" hits="0" branch="false" />
                 <line number="58" hits="0" branch="false" />
                 <line number="59" hits="0" branch="false" />
-                <line number="61" hits="0" branch="false" />
+                <line number="60" hits="0" branch="false" />
+                <line number="62" hits="0" branch="false" />
               </lines>
             </method>
             <method name="GetAllEventCategeries" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="67" hits="0" branch="false" />
                 <line number="69" hits="0" branch="false" />
                 <line number="71" hits="0" branch="false" />
-                <line number="72" hits="0" branch="false" />
+                <line number="73" hits="0" branch="false" />
                 <line number="74" hits="0" branch="false" />
-                <line number="75" hits="0" branch="false" />
                 <line number="76" hits="0" branch="false" />
+                <line number="77" hits="0" branch="false" />
                 <line number="78" hits="0" branch="false" />
+                <line number="80" hits="0" branch="false" />
               </lines>
             </method>
             <method name="GetEventRequest" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="121" hits="0" branch="false" />
-                <line number="123" hits="0" branch="false" />
-                <line number="124" hits="0" branch="false" />
-                <line number="125" hits="0" branch="false" />
+                <line number="126" hits="0" branch="false" />
                 <line number="128" hits="0" branch="false" />
                 <line number="129" hits="0" branch="false" />
                 <line number="130" hits="0" branch="false" />
-                <line number="132" hits="0" branch="false" />
+                <line number="133" hits="0" branch="false" />
+                <line number="134" hits="0" branch="false" />
+                <line number="135" hits="0" branch="false" />
+                <line number="137" hits="0" branch="false" />
               </lines>
             </method>
             <method name="GetUpcomingEvents" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="84" hits="0" branch="false" />
-                <line number="86" hits="0" branch="false" />
                 <line number="87" hits="0" branch="false" />
-                <line number="88" hits="0" branch="false" />
+                <line number="89" hits="0" branch="false" />
                 <line number="90" hits="0" branch="false" />
                 <line number="91" hits="0" branch="false" />
-                <line number="92" hits="0" branch="false" />
+                <line number="93" hits="0" branch="false" />
                 <line number="94" hits="0" branch="false" />
+                <line number="95" hits="0" branch="false" />
+                <line number="97" hits="0" branch="false" />
               </lines>
             </method>
             <method name="UpdateEventDetails" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
-                <line number="100" hits="0" branch="false" />
-                <line number="102" hits="0" branch="false" />
-                <line number="103" hits="0" branch="true" condition-coverage="0% (0/2)" />
                 <line number="104" hits="0" branch="false" />
-                <line number="105" hits="0" branch="false" />
                 <line number="106" hits="0" branch="false" />
+                <line number="107" hits="0" branch="true" condition-coverage="0% (0/2)" />
                 <line number="108" hits="0" branch="false" />
-                <line number="111" hits="0" branch="false" />
+                <line number="109" hits="0" branch="false" />
+                <line number="110" hits="0" branch="false" />
                 <line number="112" hits="0" branch="false" />
-                <line number="113" hits="0" branch="false" />
                 <line number="115" hits="0" branch="false" />
+                <line number="116" hits="0" branch="false" />
+                <line number="117" hits="0" branch="false" />
+                <line number="119" hits="0" branch="false" />
               </lines>
             </method>
             <method name="UpdateScheduledEvent" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="158" hits="0" branch="false" />
-                <line number="160" hits="0" branch="false" />
-                <line number="161" hits="0" branch="false" />
-                <line number="162" hits="0" branch="false" />
                 <line number="165" hits="0" branch="false" />
-                <line number="166" hits="0" branch="false" />
                 <line number="167" hits="0" branch="false" />
+                <line number="168" hits="0" branch="false" />
                 <line number="169" hits="0" branch="false" />
+                <line number="172" hits="0" branch="false" />
+                <line number="173" hits="0" branch="false" />
+                <line number="174" hits="0" branch="false" />
+                <line number="176" hits="0" branch="false" />
               </lines>
             </method>
           </methods>
@@ -204,81 +204,81 @@
             <line number="20" hits="0" branch="false" />
             <line number="21" hits="0" branch="false" />
             <line number="22" hits="0" branch="false" />
-            <line number="28" hits="0" branch="false" />
-            <line number="29" hits="0" branch="true" condition-coverage="0% (0/2)" />
-            <line number="30" hits="0" branch="false" />
-            <line number="32" hits="0" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="30" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="31" hits="0" branch="false" />
             <line number="33" hits="0" branch="false" />
             <line number="34" hits="0" branch="false" />
-            <line number="36" hits="0" branch="false" />
+            <line number="35" hits="0" branch="false" />
             <line number="37" hits="0" branch="false" />
             <line number="38" hits="0" branch="false" />
-            <line number="42" hits="0" branch="false" />
+            <line number="39" hits="0" branch="false" />
             <line number="43" hits="0" branch="false" />
-            <line number="45" hits="0" branch="false" />
-            <line number="51" hits="0" branch="false" />
-            <line number="53" hits="0" branch="false" />
+            <line number="44" hits="0" branch="false" />
+            <line number="46" hits="0" branch="false" />
+            <line number="52" hits="0" branch="false" />
             <line number="54" hits="0" branch="false" />
             <line number="55" hits="0" branch="false" />
-            <line number="57" hits="0" branch="false" />
+            <line number="56" hits="0" branch="false" />
             <line number="58" hits="0" branch="false" />
             <line number="59" hits="0" branch="false" />
-            <line number="61" hits="0" branch="false" />
-            <line number="67" hits="0" branch="false" />
+            <line number="60" hits="0" branch="false" />
+            <line number="62" hits="0" branch="false" />
             <line number="69" hits="0" branch="false" />
             <line number="71" hits="0" branch="false" />
-            <line number="72" hits="0" branch="false" />
+            <line number="73" hits="0" branch="false" />
             <line number="74" hits="0" branch="false" />
-            <line number="75" hits="0" branch="false" />
             <line number="76" hits="0" branch="false" />
+            <line number="77" hits="0" branch="false" />
             <line number="78" hits="0" branch="false" />
-            <line number="84" hits="0" branch="false" />
-            <line number="86" hits="0" branch="false" />
+            <line number="80" hits="0" branch="false" />
             <line number="87" hits="0" branch="false" />
-            <line number="88" hits="0" branch="false" />
+            <line number="89" hits="0" branch="false" />
             <line number="90" hits="0" branch="false" />
             <line number="91" hits="0" branch="false" />
-            <line number="92" hits="0" branch="false" />
+            <line number="93" hits="0" branch="false" />
             <line number="94" hits="0" branch="false" />
-            <line number="100" hits="0" branch="false" />
-            <line number="102" hits="0" branch="false" />
-            <line number="103" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="95" hits="0" branch="false" />
+            <line number="97" hits="0" branch="false" />
             <line number="104" hits="0" branch="false" />
-            <line number="105" hits="0" branch="false" />
             <line number="106" hits="0" branch="false" />
+            <line number="107" hits="0" branch="true" condition-coverage="0% (0/2)" />
             <line number="108" hits="0" branch="false" />
-            <line number="111" hits="0" branch="false" />
+            <line number="109" hits="0" branch="false" />
+            <line number="110" hits="0" branch="false" />
             <line number="112" hits="0" branch="false" />
-            <line number="113" hits="0" branch="false" />
             <line number="115" hits="0" branch="false" />
-            <line number="121" hits="0" branch="false" />
-            <line number="123" hits="0" branch="false" />
-            <line number="124" hits="0" branch="false" />
-            <line number="125" hits="0" branch="false" />
+            <line number="116" hits="0" branch="false" />
+            <line number="117" hits="0" branch="false" />
+            <line number="119" hits="0" branch="false" />
+            <line number="126" hits="0" branch="false" />
             <line number="128" hits="0" branch="false" />
             <line number="129" hits="0" branch="false" />
             <line number="130" hits="0" branch="false" />
-            <line number="132" hits="0" branch="false" />
+            <line number="133" hits="0" branch="false" />
+            <line number="134" hits="0" branch="false" />
+            <line number="135" hits="0" branch="false" />
             <line number="137" hits="0" branch="false" />
-            <line number="139" hits="0" branch="false" />
-            <line number="140" hits="0" branch="false" />
-            <line number="141" hits="0" branch="false" />
-            <line number="142" hits="0" branch="false" />
             <line number="143" hits="0" branch="false" />
-            <line number="144" hits="0" branch="false" />
             <line number="145" hits="0" branch="false" />
+            <line number="146" hits="0" branch="false" />
+            <line number="147" hits="0" branch="false" />
             <line number="148" hits="0" branch="false" />
             <line number="149" hits="0" branch="false" />
             <line number="150" hits="0" branch="false" />
-            <line number="152" hits="0" branch="false" />
+            <line number="151" hits="0" branch="false" />
+            <line number="154" hits="0" branch="false" />
+            <line number="155" hits="0" branch="false" />
+            <line number="156" hits="0" branch="false" />
             <line number="158" hits="0" branch="false" />
-            <line number="160" hits="0" branch="false" />
-            <line number="161" hits="0" branch="false" />
-            <line number="162" hits="0" branch="false" />
             <line number="165" hits="0" branch="false" />
-            <line number="166" hits="0" branch="false" />
             <line number="167" hits="0" branch="false" />
+            <line number="168" hits="0" branch="false" />
             <line number="169" hits="0" branch="false" />
+            <line number="172" hits="0" branch="false" />
+            <line number="173" hits="0" branch="false" />
+            <line number="174" hits="0" branch="false" />
+            <line number="176" hits="0" branch="false" />
           </lines>
         </class>
         <class name="EventManagementAPI.Controllers.AuthController" filename="C:\Users\VC\Desktop\mini_project\EventManagementSolution\EventManagementAPI\Controllers\AuthController.cs" line-rate="0" branch-rate="0" complexity="4">
@@ -491,50 +491,72 @@
             <line number="75" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="EventManagementAPI.Controllers.UserController" filename="C:\Users\VC\Desktop\mini_project\EventManagementSolution\EventManagementAPI\Controllers\UserController.cs" line-rate="0" branch-rate="1" complexity="2">
+        <class name="EventManagementAPI.Controllers.UserController" filename="C:\Users\VC\Desktop\mini_project\EventManagementSolution\EventManagementAPI\Controllers\UserController.cs" line-rate="0" branch-rate="1" complexity="3">
           <methods>
             <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="15" hits="0" branch="false" />
                 <line number="16" hits="0" branch="false" />
                 <line number="17" hits="0" branch="false" />
                 <line number="18" hits="0" branch="false" />
+                <line number="19" hits="0" branch="false" />
               </lines>
             </method>
             <method name="EventResponseStatus" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="22" hits="0" branch="false" />
                 <line number="24" hits="0" branch="false" />
-                <line number="25" hits="0" branch="false" />
                 <line number="26" hits="0" branch="false" />
                 <line number="27" hits="0" branch="false" />
                 <line number="28" hits="0" branch="false" />
                 <line number="29" hits="0" branch="false" />
                 <line number="30" hits="0" branch="false" />
-                <line number="33" hits="0" branch="false" />
-                <line number="34" hits="0" branch="false" />
+                <line number="31" hits="0" branch="false" />
+                <line number="32" hits="0" branch="false" />
                 <line number="35" hits="0" branch="false" />
+                <line number="36" hits="0" branch="false" />
                 <line number="37" hits="0" branch="false" />
+                <line number="39" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="GetEventResponse" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="44" hits="0" branch="false" />
+                <line number="46" hits="0" branch="false" />
+                <line number="47" hits="0" branch="false" />
+                <line number="48" hits="0" branch="false" />
+                <line number="49" hits="0" branch="false" />
+                <line number="52" hits="0" branch="false" />
+                <line number="53" hits="0" branch="false" />
+                <line number="54" hits="0" branch="false" />
+                <line number="56" hits="0" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="15" hits="0" branch="false" />
             <line number="16" hits="0" branch="false" />
             <line number="17" hits="0" branch="false" />
             <line number="18" hits="0" branch="false" />
-            <line number="22" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
             <line number="24" hits="0" branch="false" />
-            <line number="25" hits="0" branch="false" />
             <line number="26" hits="0" branch="false" />
             <line number="27" hits="0" branch="false" />
             <line number="28" hits="0" branch="false" />
             <line number="29" hits="0" branch="false" />
             <line number="30" hits="0" branch="false" />
-            <line number="33" hits="0" branch="false" />
-            <line number="34" hits="0" branch="false" />
+            <line number="31" hits="0" branch="false" />
+            <line number="32" hits="0" branch="false" />
             <line number="35" hits="0" branch="false" />
+            <line number="36" hits="0" branch="false" />
             <line number="37" hits="0" branch="false" />
+            <line number="39" hits="0" branch="false" />
+            <line number="44" hits="0" branch="false" />
+            <line number="46" hits="0" branch="false" />
+            <line number="47" hits="0" branch="false" />
+            <line number="48" hits="0" branch="false" />
+            <line number="49" hits="0" branch="false" />
+            <line number="52" hits="0" branch="false" />
+            <line number="53" hits="0" branch="false" />
+            <line number="54" hits="0" branch="false" />
+            <line number="56" hits="0" branch="false" />
           </lines>
         </class>
         <class name="EventManagementAPI.Exceptions.NoSuchBookingException" filename="C:\Users\VC\Desktop\mini_project\EventManagementSolution\EventManagementAPI\Exceptions\NoSuchBookingException.cs" line-rate="0.8" branch-rate="1" complexity="2">
@@ -681,28 +703,28 @@
             <line number="14" hits="2" branch="false" />
           </lines>
         </class>
-        <class name="EventManagementAPI.Exceptions.RequestNotAcceptedException" filename="C:\Users\VC\Desktop\mini_project\EventManagementSolution\EventManagementAPI\Exceptions\RequestNotAcceptedException.cs" line-rate="1" branch-rate="1" complexity="2">
+        <class name="EventManagementAPI.Exceptions.RequestNotAcceptedException" filename="C:\Users\VC\Desktop\mini_project\EventManagementSolution\EventManagementAPI\Exceptions\RequestNotAcceptedException.cs" line-rate="0" branch-rate="1" complexity="2">
           <methods>
-            <method name="get_Message" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name="get_Message" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="2" branch="false" />
+                <line number="13" hits="0" branch="false" />
               </lines>
             </method>
-            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="3" branch="false" />
-                <line number="10" hits="3" branch="false" />
-                <line number="11" hits="3" branch="false" />
-                <line number="12" hits="3" branch="false" />
+                <line number="9" hits="0" branch="false" />
+                <line number="10" hits="0" branch="false" />
+                <line number="11" hits="0" branch="false" />
+                <line number="12" hits="0" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="9" hits="3" branch="false" />
-            <line number="10" hits="3" branch="false" />
-            <line number="11" hits="3" branch="false" />
-            <line number="12" hits="3" branch="false" />
-            <line number="13" hits="2" branch="false" />
+            <line number="9" hits="0" branch="false" />
+            <line number="10" hits="0" branch="false" />
+            <line number="11" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="13" hits="0" branch="false" />
           </lines>
         </class>
         <class name="EventManagementAPI.Exceptions.ResponseNotAcceptedException" filename="C:\Users\VC\Desktop\mini_project\EventManagementSolution\EventManagementAPI\Exceptions\ResponseNotAcceptedException.cs" line-rate="0" branch-rate="1" complexity="2">
@@ -997,7 +1019,7 @@
           <methods>
             <method name="get_EventRequestId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="5" hits="12" branch="false" />
+                <line number="5" hits="15" branch="false" />
               </lines>
             </method>
             <method name="get_ResponseStatus" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -1007,20 +1029,20 @@
             </method>
             <method name="get_Amount" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="7" branch="false" />
+                <line number="7" hits="10" branch="false" />
               </lines>
             </method>
             <method name="get_ResponseMessage" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="8" hits="7" branch="false" />
+                <line number="8" hits="10" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="5" hits="12" branch="false" />
+            <line number="5" hits="15" branch="false" />
             <line number="6" hits="5" branch="false" />
-            <line number="7" hits="7" branch="false" />
-            <line number="8" hits="7" branch="false" />
+            <line number="7" hits="10" branch="false" />
+            <line number="8" hits="10" branch="false" />
           </lines>
         </class>
         <class name="EventManagementAPI.Models.DTOs.ScheduledEventListDTO" filename="C:\Users\VC\Desktop\mini_project\EventManagementSolution\EventManagementAPI\Models\DTOs\ScheduledEventListDTO.cs" line-rate="1" branch-rate="1" complexity="10">
@@ -1231,7 +1253,7 @@
           <methods>
             <method name="get_EventRequestId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="24" branch="false" />
+                <line number="7" hits="27" branch="false" />
               </lines>
             </method>
             <method name="get_UserId" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -1281,7 +1303,7 @@
             </method>
             <method name="get_RequestStatus" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="19" hits="27" branch="false" />
+                <line number="19" hits="30" branch="false" />
               </lines>
             </method>
             <method name="get_EntertainmentDetails" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -1301,7 +1323,7 @@
             </method>
           </methods>
           <lines>
-            <line number="7" hits="24" branch="false" />
+            <line number="7" hits="27" branch="false" />
             <line number="8" hits="17" branch="false" />
             <line number="10" hits="0" branch="false" />
             <line number="11" hits="17" branch="false" />
@@ -1311,7 +1333,7 @@
             <line number="16" hits="17" branch="false" />
             <line number="17" hits="19" branch="false" />
             <line number="18" hits="17" branch="false" />
-            <line number="19" hits="27" branch="false" />
+            <line number="19" hits="30" branch="false" />
             <line number="20" hits="17" branch="false" />
             <line number="21" hits="17" branch="false" />
             <line number="22" hits="17" branch="false" />
@@ -1321,12 +1343,12 @@
           <methods>
             <method name="get_EventResponseId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="17" branch="false" />
+                <line number="7" hits="20" branch="false" />
               </lines>
             </method>
             <method name="get_EventRequestId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="8" hits="11" branch="false" />
+                <line number="8" hits="14" branch="false" />
               </lines>
             </method>
             <method name="get_EventRequest" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -1336,17 +1358,17 @@
             </method>
             <method name="get_Amount" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="11" branch="false" />
+                <line number="11" hits="14" branch="false" />
               </lines>
             </method>
             <method name="get_ResponseMessage" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="13" branch="false" />
+                <line number="12" hits="16" branch="false" />
               </lines>
             </method>
             <method name="get_ResponseStatus" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="17" branch="false" />
+                <line number="13" hits="20" branch="false" />
               </lines>
             </method>
             <method name="get_ResponseDate" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -1356,12 +1378,12 @@
             </method>
           </methods>
           <lines>
-            <line number="7" hits="17" branch="false" />
-            <line number="8" hits="11" branch="false" />
+            <line number="7" hits="20" branch="false" />
+            <line number="8" hits="14" branch="false" />
             <line number="10" hits="0" branch="false" />
-            <line number="11" hits="11" branch="false" />
-            <line number="12" hits="13" branch="false" />
-            <line number="13" hits="17" branch="false" />
+            <line number="11" hits="14" branch="false" />
+            <line number="12" hits="16" branch="false" />
+            <line number="13" hits="20" branch="false" />
             <line number="14" hits="9" branch="false" />
           </lines>
         </class>
@@ -1881,10 +1903,10 @@
             </method>
             <method name="Get" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="37" hits="19" branch="false" />
-                <line number="38" hits="19" branch="false" />
-                <line number="39" hits="19" branch="false" />
-                <line number="40" hits="19" branch="false" />
+                <line number="37" hits="22" branch="false" />
+                <line number="38" hits="22" branch="false" />
+                <line number="39" hits="22" branch="false" />
+                <line number="40" hits="22" branch="false" />
               </lines>
             </method>
             <method name="GetAll" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -1897,15 +1919,15 @@
             </method>
             <method name="Update" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="49" hits="7" branch="false" />
-                <line number="50" hits="7" branch="false" />
-                <line number="51" hits="7" branch="true" condition-coverage="100% (2/2)" />
-                <line number="52" hits="6" branch="false" />
-                <line number="53" hits="6" branch="false" />
-                <line number="54" hits="6" branch="false" />
-                <line number="55" hits="6" branch="false" />
+                <line number="49" hits="10" branch="false" />
+                <line number="50" hits="10" branch="false" />
+                <line number="51" hits="10" branch="true" condition-coverage="100% (2/2)" />
+                <line number="52" hits="9" branch="false" />
+                <line number="53" hits="9" branch="false" />
+                <line number="54" hits="9" branch="false" />
+                <line number="55" hits="9" branch="false" />
                 <line number="57" hits="1" branch="false" />
-                <line number="58" hits="6" branch="false" />
+                <line number="58" hits="9" branch="false" />
               </lines>
             </method>
           </methods>
@@ -1928,23 +1950,23 @@
             <line number="31" hits="1" branch="false" />
             <line number="33" hits="1" branch="false" />
             <line number="34" hits="1" branch="false" />
-            <line number="37" hits="19" branch="false" />
-            <line number="38" hits="19" branch="false" />
-            <line number="39" hits="19" branch="false" />
-            <line number="40" hits="19" branch="false" />
+            <line number="37" hits="22" branch="false" />
+            <line number="38" hits="22" branch="false" />
+            <line number="39" hits="22" branch="false" />
+            <line number="40" hits="22" branch="false" />
             <line number="43" hits="3" branch="false" />
             <line number="44" hits="3" branch="false" />
             <line number="45" hits="3" branch="false" />
             <line number="46" hits="3" branch="false" />
-            <line number="49" hits="7" branch="false" />
-            <line number="50" hits="7" branch="false" />
-            <line number="51" hits="7" branch="true" condition-coverage="100% (2/2)" />
-            <line number="52" hits="6" branch="false" />
-            <line number="53" hits="6" branch="false" />
-            <line number="54" hits="6" branch="false" />
-            <line number="55" hits="6" branch="false" />
+            <line number="49" hits="10" branch="false" />
+            <line number="50" hits="10" branch="false" />
+            <line number="51" hits="10" branch="true" condition-coverage="100% (2/2)" />
+            <line number="52" hits="9" branch="false" />
+            <line number="53" hits="9" branch="false" />
+            <line number="54" hits="9" branch="false" />
+            <line number="55" hits="9" branch="false" />
             <line number="57" hits="1" branch="false" />
-            <line number="58" hits="6" branch="false" />
+            <line number="58" hits="9" branch="false" />
           </lines>
         </class>
         <class name="EventManagementAPI.Repositories.EventResponseRepository" filename="C:\Users\VC\Desktop\mini_project\EventManagementSolution\EventManagementAPI\Repositories\EventResponseRepository.cs" line-rate="1" branch-rate="1" complexity="8">
@@ -1959,11 +1981,11 @@
             </method>
             <method name="Add" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="18" hits="10" branch="false" />
-                <line number="19" hits="10" branch="false" />
-                <line number="20" hits="5" branch="false" />
-                <line number="21" hits="3" branch="false" />
-                <line number="22" hits="3" branch="false" />
+                <line number="18" hits="13" branch="false" />
+                <line number="19" hits="13" branch="false" />
+                <line number="20" hits="8" branch="false" />
+                <line number="21" hits="6" branch="false" />
+                <line number="22" hits="6" branch="false" />
               </lines>
             </method>
             <method name="Delete" signature="()" line-rate="1" branch-rate="1" complexity="2">
@@ -2014,11 +2036,11 @@
             <line number="14" hits="3" branch="false" />
             <line number="15" hits="3" branch="false" />
             <line number="16" hits="3" branch="false" />
-            <line number="18" hits="10" branch="false" />
-            <line number="19" hits="10" branch="false" />
-            <line number="20" hits="5" branch="false" />
-            <line number="21" hits="3" branch="false" />
-            <line number="22" hits="3" branch="false" />
+            <line number="18" hits="13" branch="false" />
+            <line number="19" hits="13" branch="false" />
+            <line number="20" hits="8" branch="false" />
+            <line number="21" hits="6" branch="false" />
+            <line number="22" hits="6" branch="false" />
             <line number="25" hits="2" branch="false" />
             <line number="26" hits="2" branch="false" />
             <line number="27" hits="2" branch="true" condition-coverage="100% (2/2)" />
@@ -2723,7 +2745,7 @@
             <line number="61" hits="3" branch="false" />
           </lines>
         </class>
-        <class name="EventManagementAPI.Services.EventResponseService" filename="C:\Users\VC\Desktop\mini_project\EventManagementSolution\EventManagementAPI\Services\EventResponseService.cs" line-rate="0.875" branch-rate="0.666666666666667" complexity="7">
+        <class name="EventManagementAPI.Services.EventResponseService" filename="C:\Users\VC\Desktop\mini_project\EventManagementSolution\EventManagementAPI\Services\EventResponseService.cs" line-rate="0.577777777777778" branch-rate="0.3" complexity="11">
           <methods>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -2734,39 +2756,56 @@
                 <line number="17" hits="2" branch="false" />
               </lines>
             </method>
-            <method name="CreateEventResponse" signature="()" line-rate="0.888888888888889" branch-rate="0.75" complexity="4">
+            <method name="CreateEventResponse" signature="()" line-rate="0.777777777777778" branch-rate="0.5" complexity="4">
               <lines>
                 <line number="19" hits="5" branch="false" />
                 <line number="20" hits="5" branch="false" />
                 <line number="22" hits="5" branch="true" condition-coverage="50% (1/2)" />
                 <line number="23" hits="0" branch="false" />
                 <line number="24" hits="0" branch="false" />
-                <line number="26" hits="5" branch="true" condition-coverage="100% (2/2)" />
-                <line number="27" hits="3" branch="false" />
-                <line number="28" hits="3" branch="false" />
-                <line number="30" hits="2" branch="false" />
-                <line number="31" hits="2" branch="false" />
-                <line number="32" hits="2" branch="false" />
-                <line number="33" hits="2" branch="false" />
-                <line number="34" hits="2" branch="false" />
-                <line number="35" hits="2" branch="false" />
-                <line number="37" hits="2" branch="false" />
-                <line number="38" hits="2" branch="false" />
-                <line number="39" hits="2" branch="false" />
-                <line number="40" hits="2" branch="false" />
+                <line number="26" hits="5" branch="true" condition-coverage="50% (1/2)" />
+                <line number="27" hits="0" branch="false" />
+                <line number="28" hits="0" branch="false" />
+                <line number="30" hits="5" branch="false" />
+                <line number="31" hits="5" branch="false" />
+                <line number="32" hits="5" branch="false" />
+                <line number="33" hits="5" branch="false" />
+                <line number="34" hits="5" branch="false" />
+                <line number="35" hits="5" branch="false" />
+                <line number="37" hits="5" branch="false" />
+                <line number="38" hits="5" branch="false" />
+                <line number="39" hits="5" branch="false" />
+                <line number="40" hits="5" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAllEventResponse" signature="()" line-rate="0" branch-rate="0" complexity="4">
+              <lines>
+                <line number="43" hits="0" branch="false" />
+                <line number="44" hits="0" branch="false" />
+                <line number="45" hits="0" branch="false" />
+                <line number="46" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="47" hits="0" branch="false" />
+                <line number="48" hits="0" branch="false" />
+                <line number="49" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="50" hits="0" branch="false" />
+                <line number="51" hits="0" branch="false" />
+                <line number="52" hits="0" branch="false" />
+                <line number="53" hits="0" branch="false" />
+                <line number="54" hits="0" branch="false" />
+                <line number="55" hits="0" branch="false" />
               </lines>
             </method>
             <method name="UpdateResponse" signature="()" line-rate="0.777777777777778" branch-rate="0.5" complexity="2">
               <lines>
-                <line number="43" hits="2" branch="false" />
-                <line number="44" hits="2" branch="false" />
-                <line number="45" hits="2" branch="true" condition-coverage="50% (1/2)" />
-                <line number="46" hits="0" branch="false" />
-                <line number="47" hits="0" branch="false" />
-                <line number="49" hits="2" branch="false" />
-                <line number="50" hits="2" branch="false" />
-                <line number="52" hits="2" branch="false" />
-                <line number="53" hits="2" branch="false" />
+                <line number="58" hits="2" branch="false" />
+                <line number="59" hits="2" branch="false" />
+                <line number="60" hits="2" branch="true" condition-coverage="50% (1/2)" />
+                <line number="61" hits="0" branch="false" />
+                <line number="62" hits="0" branch="false" />
+                <line number="64" hits="2" branch="false" />
+                <line number="65" hits="2" branch="false" />
+                <line number="67" hits="2" branch="false" />
+                <line number="68" hits="2" branch="false" />
               </lines>
             </method>
           </methods>
@@ -2781,28 +2820,41 @@
             <line number="22" hits="5" branch="true" condition-coverage="50% (1/2)" />
             <line number="23" hits="0" branch="false" />
             <line number="24" hits="0" branch="false" />
-            <line number="26" hits="5" branch="true" condition-coverage="100% (2/2)" />
-            <line number="27" hits="3" branch="false" />
-            <line number="28" hits="3" branch="false" />
-            <line number="30" hits="2" branch="false" />
-            <line number="31" hits="2" branch="false" />
-            <line number="32" hits="2" branch="false" />
-            <line number="33" hits="2" branch="false" />
-            <line number="34" hits="2" branch="false" />
-            <line number="35" hits="2" branch="false" />
-            <line number="37" hits="2" branch="false" />
-            <line number="38" hits="2" branch="false" />
-            <line number="39" hits="2" branch="false" />
-            <line number="40" hits="2" branch="false" />
-            <line number="43" hits="2" branch="false" />
-            <line number="44" hits="2" branch="false" />
-            <line number="45" hits="2" branch="true" condition-coverage="50% (1/2)" />
-            <line number="46" hits="0" branch="false" />
+            <line number="26" hits="5" branch="true" condition-coverage="50% (1/2)" />
+            <line number="27" hits="0" branch="false" />
+            <line number="28" hits="0" branch="false" />
+            <line number="30" hits="5" branch="false" />
+            <line number="31" hits="5" branch="false" />
+            <line number="32" hits="5" branch="false" />
+            <line number="33" hits="5" branch="false" />
+            <line number="34" hits="5" branch="false" />
+            <line number="35" hits="5" branch="false" />
+            <line number="37" hits="5" branch="false" />
+            <line number="38" hits="5" branch="false" />
+            <line number="39" hits="5" branch="false" />
+            <line number="40" hits="5" branch="false" />
+            <line number="43" hits="0" branch="false" />
+            <line number="44" hits="0" branch="false" />
+            <line number="45" hits="0" branch="false" />
+            <line number="46" hits="0" branch="true" condition-coverage="0% (0/2)" />
             <line number="47" hits="0" branch="false" />
-            <line number="49" hits="2" branch="false" />
-            <line number="50" hits="2" branch="false" />
-            <line number="52" hits="2" branch="false" />
-            <line number="53" hits="2" branch="false" />
+            <line number="48" hits="0" branch="false" />
+            <line number="49" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="50" hits="0" branch="false" />
+            <line number="51" hits="0" branch="false" />
+            <line number="52" hits="0" branch="false" />
+            <line number="53" hits="0" branch="false" />
+            <line number="54" hits="0" branch="false" />
+            <line number="55" hits="0" branch="false" />
+            <line number="58" hits="2" branch="false" />
+            <line number="59" hits="2" branch="false" />
+            <line number="60" hits="2" branch="true" condition-coverage="50% (1/2)" />
+            <line number="61" hits="0" branch="false" />
+            <line number="62" hits="0" branch="false" />
+            <line number="64" hits="2" branch="false" />
+            <line number="65" hits="2" branch="false" />
+            <line number="67" hits="2" branch="false" />
+            <line number="68" hits="2" branch="false" />
           </lines>
         </class>
         <class name="EventManagementAPI.Services.UserService" filename="C:\Users\VC\Desktop\mini_project\EventManagementSolution\EventManagementAPI\Services\UserService.cs" line-rate="0.63768115942029" branch-rate="0.5" complexity="20">
@@ -2983,7 +3035,7 @@
         </class>
       </classes>
     </package>
-    <package name="EventManagementTest" line-rate="0.952450621799561" branch-rate="1" complexity="121">
+    <package name="EventManagementTest" line-rate="0.953182150694952" branch-rate="1" complexity="121">
       <classes>
         <class name="AutoGeneratedProgram" filename="C:\Users\VC\.nuget\packages\microsoft.net.test.sdk\17.8.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
@@ -5725,7 +5777,7 @@
             <line number="152" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="EventManagementTest.ServiceTests.EventResponseServiceTest" filename="C:\Users\VC\Desktop\mini_project\EventManagementSolution\EventManagementTest\ServiceTests\EventResponseServiceTest.cs" line-rate="0.968992248062015" branch-rate="1" complexity="7">
+        <class name="EventManagementTest.ServiceTests.EventResponseServiceTest" filename="C:\Users\VC\Desktop\mini_project\EventManagementSolution\EventManagementTest\ServiceTests\EventResponseServiceTest.cs" line-rate="0.976744186046512" branch-rate="1" complexity="7">
           <methods>
             <method name="Setup" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -5751,7 +5803,7 @@
                 <line number="46" hits="1" branch="false" />
               </lines>
             </method>
-            <method name="CreateEventResponse_Success" signature="()" line-rate="0.939393939393939" branch-rate="1" complexity="1">
+            <method name="CreateEventResponse_Success" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
                 <line number="50" hits="1" branch="false" />
                 <line number="51" hits="1" branch="false" />
@@ -5784,8 +5836,8 @@
                 <line number="78" hits="1" branch="false" />
                 <line number="79" hits="1" branch="false" />
                 <line number="80" hits="1" branch="false" />
-                <line number="81" hits="0" branch="false" />
-                <line number="82" hits="0" branch="false" />
+                <line number="81" hits="1" branch="false" />
+                <line number="82" hits="1" branch="false" />
               </lines>
             </method>
             <method name="CreateEventResponse_Fail" signature="()" line-rate="0.9" branch-rate="1" complexity="1">
@@ -5802,7 +5854,7 @@
                 <line number="94" hits="0" branch="false" />
               </lines>
             </method>
-            <method name="CreateEventResponse_RequestNotAccepted" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name="CreateEventResponse_RequestNotAccepted" signature="()" line-rate="0.96969696969697" branch-rate="1" complexity="1">
               <lines>
                 <line number="97" hits="1" branch="false" />
                 <line number="98" hits="1" branch="false" />
@@ -5836,7 +5888,7 @@
                 <line number="126" hits="1" branch="false" />
                 <line number="127" hits="1" branch="false" />
                 <line number="128" hits="2" branch="false" />
-                <line number="129" hits="1" branch="false" />
+                <line number="129" hits="0" branch="false" />
               </lines>
             </method>
             <method name="UpdateResponse_Success" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -5933,8 +5985,8 @@
             <line number="78" hits="1" branch="false" />
             <line number="79" hits="1" branch="false" />
             <line number="80" hits="1" branch="false" />
-            <line number="81" hits="0" branch="false" />
-            <line number="82" hits="0" branch="false" />
+            <line number="81" hits="1" branch="false" />
+            <line number="82" hits="1" branch="false" />
             <line number="85" hits="1" branch="false" />
             <line number="86" hits="1" branch="false" />
             <line number="87" hits="1" branch="false" />
@@ -5977,7 +6029,7 @@
             <line number="126" hits="1" branch="false" />
             <line number="127" hits="1" branch="false" />
             <line number="128" hits="2" branch="false" />
-            <line number="129" hits="1" branch="false" />
+            <line number="129" hits="0" branch="false" />
             <line number="132" hits="1" branch="false" />
             <line number="133" hits="1" branch="false" />
             <line number="134" hits="1" branch="false" />

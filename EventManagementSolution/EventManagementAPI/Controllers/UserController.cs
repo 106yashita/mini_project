@@ -17,6 +17,7 @@ namespace EventManagementAPI.Controllers
         {
             _responseService = responseService;
         }
+
         [HttpPut]
         [Route("eventsResponseStatus")]
         public async Task<IActionResult> EventResponseStatus(int responseId, string status)

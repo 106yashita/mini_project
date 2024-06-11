@@ -30,7 +30,8 @@ namespace EventManagementAPI.Migrations
                 name: "UserProfiles",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserType = table.Column<string>(type: "nvarchar(max)", nullable: true)
@@ -44,13 +45,15 @@ namespace EventManagementAPI.Migrations
                 name: "Users",
                 columns: table => new
                 {
+                    UserId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     UserProfileId = table.Column<int>(type: "int", nullable: false),
                     Password = table.Column<byte[]>(type: "varbinary(max)", nullable: false),
                     PasswordHashKey = table.Column<byte[]>(type: "varbinary(max)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Users", x => x.UserProfileId);
+                    table.PrimaryKey("PK_Users", x => x.UserId);
                     table.ForeignKey(
                         name: "FK_Users_UserProfiles_UserProfileId",
                         column: x => x.UserProfileId,
@@ -76,7 +79,7 @@ namespace EventManagementAPI.Migrations
                     EntertainmentDetails = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     SpecialInstruction = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     FoodPreferences = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UserTempId = table.Column<int>(type: "int", nullable: true)
+                    UserId1 = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -94,10 +97,10 @@ namespace EventManagementAPI.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_EventRequests_Users_UserTempId",
-                        column: x => x.UserTempId,
+                        name: "FK_EventRequests_Users_UserId1",
+                        column: x => x.UserId1,
                         principalTable: "Users",
-                        principalColumn: "UserProfileId");
+                        principalColumn: "UserId");
                 });
 
             migrationBuilder.CreateTable(
@@ -153,6 +156,47 @@ namespace EventManagementAPI.Migrations
                         onDelete: ReferentialAction.NoAction);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "ScheduledEvents",
+                columns: table => new
+                {
+                    ScheduledEventId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    EventId = table.Column<int>(type: "int", nullable: false),
+                    EventResponseId = table.Column<int>(type: "int", nullable: false),
+                    EventRequestId = table.Column<int>(type: "int", nullable: false),
+                    IsCompleted = table.Column<bool>(type: "bit", nullable: false),
+                    UserProfileId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ScheduledEvents", x => x.ScheduledEventId);
+                    table.ForeignKey(
+                        name: "FK_ScheduledEvents_EventRequests_EventRequestId",
+                        column: x => x.EventRequestId,
+                        principalTable: "EventRequests",
+                        principalColumn: "EventRequestId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_ScheduledEvents_EventResponses_EventResponseId",
+                        column: x => x.EventResponseId,
+                        principalTable: "EventResponses",
+                        principalColumn: "EventResponseId",
+                        onDelete: ReferentialAction.NoAction);
+                    table.ForeignKey(
+                        name: "FK_ScheduledEvents_Events_EventId",
+                        column: x => x.EventId,
+                        principalTable: "Events",
+                        principalColumn: "EventId",
+                        onDelete: ReferentialAction.NoAction);
+                    table.ForeignKey(
+                        name: "FK_ScheduledEvents_UserProfiles_UserProfileId",
+                        column: x => x.UserProfileId,
+                        principalTable: "UserProfiles",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.NoAction);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Bookings_EventResponseId",
                 table: "Bookings",
@@ -174,20 +218,48 @@ namespace EventManagementAPI.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_EventRequests_UserTempId",
+                name: "IX_EventRequests_UserId1",
                 table: "EventRequests",
-                column: "UserTempId");
+                column: "UserId1");
 
             migrationBuilder.CreateIndex(
                 name: "IX_EventResponses_EventRequestId",
                 table: "EventResponses",
                 column: "EventRequestId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ScheduledEvents_EventId",
+                table: "ScheduledEvents",
+                column: "EventId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ScheduledEvents_EventRequestId",
+                table: "ScheduledEvents",
+                column: "EventRequestId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ScheduledEvents_EventResponseId",
+                table: "ScheduledEvents",
+                column: "EventResponseId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ScheduledEvents_UserProfileId",
+                table: "ScheduledEvents",
+                column: "UserProfileId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Users_UserProfileId",
+                table: "Users",
+                column: "UserProfileId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
                 name: "Bookings");
+
+            migrationBuilder.DropTable(
+                name: "ScheduledEvents");
 
             migrationBuilder.DropTable(
                 name: "EventResponses");

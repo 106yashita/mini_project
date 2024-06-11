@@ -10,7 +10,7 @@ namespace EventManagementAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "admin")]
+    
     public class AdminController : ControllerBase
     {
         private readonly IAdminService _adminService;
@@ -22,6 +22,7 @@ namespace EventManagementAPI.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "admin")]
         [Route("events")]
         [ProducesResponseType(typeof(Event), StatusCodes.Status200OK)]
         public async Task<IActionResult> CreateEvent(CreateEventDTO eventDTO)
@@ -61,6 +62,7 @@ namespace EventManagementAPI.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "admin")]
         [Route("eventsCategory")]
         [ProducesResponseType(typeof(HashSet<string>), StatusCodes.Status200OK)]
         public async Task<IActionResult> GetAllEventCategeries()
@@ -78,6 +80,7 @@ namespace EventManagementAPI.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "admin")]
         [Route("events/scheduled")]
         [ProducesResponseType(typeof(List<ScheduledEventListDTO>), StatusCodes.Status200OK)]
         public async Task<IActionResult> GetUpcomingEvents()
@@ -95,6 +98,7 @@ namespace EventManagementAPI.Controllers
 
 
         [HttpPut]
+        [Authorize(Roles = "admin")]
         [Route("events")]
         public async Task<IActionResult> UpdateEventDetails(UpdateEventDTO updateEventDTO)
         {
@@ -115,6 +119,7 @@ namespace EventManagementAPI.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "admin")]
         [Route("eventsRequest")]
         [ProducesResponseType(typeof(List<EventRequest>), StatusCodes.Status200OK)]
         public async Task<IActionResult> GetEventRequest()
@@ -131,7 +136,8 @@ namespace EventManagementAPI.Controllers
             }
         }
 
-        [HttpPut]
+        [HttpPut] 
+        [Authorize(Roles = "admin")]
         [Route("eventsRequestStatus")]
         public async Task<IActionResult> EventRequestStatus(int requestId,string status)
         {
@@ -153,6 +159,7 @@ namespace EventManagementAPI.Controllers
 
 
         [HttpPut]
+        [Authorize(Roles = "admin")]
         [Route("completedEvent")]
         public async Task<IActionResult> UpdateScheduledEvent(int scheduledEventId,bool isCompleted)
         {

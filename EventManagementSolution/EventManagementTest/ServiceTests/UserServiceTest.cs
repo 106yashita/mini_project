@@ -56,7 +56,6 @@ namespace EventManagementTest.ServiceTests
             // Arrange
             var userRegisterDTO = new UserRegisterDTO
             {
-                Id=101,
                 UserName = "John Doe",
                 Email = "john@example.com",
                 UserType = "admin",
@@ -92,7 +91,6 @@ namespace EventManagementTest.ServiceTests
             // Arrange
             var userRegisterDTO1 = new UserRegisterDTO
             {
-                Id = 101,
                 UserName = "John Doe",
                 Email = "john@example.com",
                 UserType = "admin",
@@ -102,7 +100,6 @@ namespace EventManagementTest.ServiceTests
              _userService.Register(userRegisterDTO1);
             var userRegisterDTO2 = new UserRegisterDTO
             {
-                Id = 101,
                 UserName = "John Doe",
                 Email = "john@example.com",
                 UserType = "admin",
@@ -119,7 +116,6 @@ namespace EventManagementTest.ServiceTests
             // Arrange
             var userRegisterDTO = new UserRegisterDTO
             {
-                Id = 101,
                 UserName = "John Doe",
                 Email = "john@example.com",
                 UserType = "admin",
@@ -168,7 +164,6 @@ namespace EventManagementTest.ServiceTests
             // Arrange
             var userRegisterDTO = new UserRegisterDTO
             {
-                Id = 101,
                 UserName = "John Doe",
                 Email = "john@example.com",
                 UserType = "admin",
