@@ -17,60 +17,90 @@
     <!--css file-->
     <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-    <!-- header section starts  -->
-    <header class="header">
-        <a href="#" class="logo">EventEase</a>
-        <div>
+<body id="adminPage">
+   <!-- header section starts  -->
+   <header class="header">
+    <a href="#" class="logo">EventEase</a>
+    <div>
         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#createEventModal">
             CREATE NEW EVENT
-          </button>
-        </div>   
-        <div class="modal fade" id="createEventModal" tabindex="-1" aria-labelledby="createEventModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title" id="createEventModalLabel">CREATE EVENT</h2>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form class="modal-form">
-                            <div class="mb-3">
-                                <label for="eventName" class="form-label">Event Name</label>
-                                <input type="text" class="form-control" id="eventName" placeholder="Event Name">
-                            </div>
-                            <div class="mb-3">
-                                <label for="eventDescription" class="form-label">Description</label>
-                                <textarea class="form-control" id="eventDescription" rows="3" placeholder="Event Description"></textarea>
-                            </div>
-                            <div class="mb-3">
-                                <label for="eventType" class="form-label">Event Type</label>
-                                <input type="text" class="form-control" id="eventType" placeholder="Type">
-                            </div>
-                            <div class="mb-3">
-                                <label for="eventLocation" class="form-label">Location</label>
-                                <input type="text" class="form-control" id="eventLocation" placeholder="Event Location">
-                            </div>                  
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn">Create Event</button>
-                    </div>
+        </button>
+    </div>   
+    <div class="modal fade" id="createEventModal" tabindex="-1" aria-labelledby="createEventModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="createEventModalLabel">CREATE EVENT</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="modal-form">
+                        <div class="mb-3">
+                            <label for="eventName" class="form-label">Event Name</label>
+                            <input type="text" class="form-control" id="eventName" placeholder="Event Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="eventDescription" class="form-label">Description</label>
+                            <textarea class="form-control" id="eventDescription" rows="3" placeholder="Event Description"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="eventType" class="form-label">Event Type</label>
+                            <input type="text" class="form-control" id="eventType" placeholder="Type">
+                        </div>
+                        <div class="mb-3">
+                            <label for="eventLocation" class="form-label">Location</label>
+                            <input type="text" class="form-control" id="eventLocation" placeholder="Event Location">
+                        </div>                  
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn" onclick="CreateEvent()">Create Event</button>
                 </div>
             </div>
-        </div>  
-        <nav class="navbar">
-          <a href="#categories">Event Categories</a>
-          <a href="#upcomingevent">Upcoming Events</a>
-          <a href="#eventrequest">Event Request</a>
-          <a href="index.html">home</a>
-          <a href="login.html">logout</a>
-        </nav>
-  
-        <div id="menu-bars" class="fas fa-bars"></div>
-      </header>
-      
-      <script src="app.js"></script>
+        </div>
+    </div> 
+    <!-- Modal for updating event details -->
+    <div class="modal fade" id="updateEventModal" tabindex="-1" aria-labelledby="updateEventModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="updateEventModalLabel">Update Event</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="updateEventForm">
+                        <input type="hidden" id="updateEventId">                      
+                        <div class="mb-3">
+                            <label for="updateEventName" class="form-label">Event Name</label>
+                            <input type="text" class="form-control" id="updateEventName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="updateEventDescription" class="form-label">Description</label>
+                            <textarea class="form-control" id="updateEventDescription" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="updateEvent()">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <nav class="navbar">
+        <a href="#categories">Event Categories</a>
+        <a href="#upcomingevent">Upcoming Events</a>
+        <a href="#eventrequest">Event Request</a>
+        <a href="index.html">home</a>
+        <a href="login.html">logout</a>
+    </nav>
+    <div id="menu-bars" class="fas fa-bars"></div>
+    </header>
+    <div class="eventCardsContainer" id="eventCardsContainer">
+        <!-- Event cards will be inserted here -->
+    </div>
+    
+    <script src="app.js"></script>
 </body>
 </html>

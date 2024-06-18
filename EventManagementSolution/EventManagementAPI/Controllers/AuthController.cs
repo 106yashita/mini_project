@@ -1,12 +1,14 @@
 ﻿using EventManagementAPI.Interfaces;
 using EventManagementAPI.Models;
 using EventManagementAPI.Models.DTOs;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EventManagementAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("MyCors")]
     public class AuthController : ControllerBase
     {
         private readonly IUserService _userService;

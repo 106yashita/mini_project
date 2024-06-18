@@ -21,7 +21,16 @@ namespace EventManagementAPI.Services
         }
         public async Task<LoginReturnDTO> Login(UserLoginDTO loginDTO)
         {
-            var userDB = await _userRepo.Get(loginDTO.UserId);
+            var users=await _userProfileRepo.GetAll();
+            int userID=0;
+            foreach (var user in users)
+            {
+                if(user.UserName==loginDTO.UserName)
+                {
+                    userID=user.Id;
+                }
+            }
+            var userDB= await _userRepo.Get(userID);
             if (userDB == null)
             {
                 throw new UnauthorizedUserException("Invalid username or password");
@@ -31,7 +40,7 @@ namespace EventManagementAPI.Services
             bool isPasswordSame = ComparePassword(encrypterPass, userDB.Password);
             if (isPasswordSame)
             {
-                var profile = await _userProfileRepo.Get(loginDTO.UserId);
+                var profile = await _userProfileRepo.Get(userID);
                 LoginReturnDTO loginReturnDTO = MapProfileToLoginReturn(profile);
                 return loginReturnDTO;
             }

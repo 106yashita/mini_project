@@ -3,6 +3,7 @@ using EventManagementAPI.Models;
 using EventManagementAPI.Models.DTOs;
 using EventManagementAPI.Services;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,6 +11,7 @@ namespace EventManagementAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("MyCors")]
     public class BookingController : ControllerBase
     {
         private readonly IBookingService _bookingService;

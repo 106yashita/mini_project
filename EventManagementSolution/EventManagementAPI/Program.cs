@@ -89,6 +89,16 @@ namespace EventManagementAPI
             builder.Services.AddScoped<IBookingService, BookingService>();
             #endregion services
 
+            #region CORS
+            builder.Services.AddCors(opts =>
+            {
+                opts.AddPolicy("MyCors", options =>
+                {
+                    options.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+                });
+            });
+            #endregion
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -97,7 +107,7 @@ namespace EventManagementAPI
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
+            app.UseCors("MyCors");
             app.UseAuthentication();
             app.UseAuthorization();
 

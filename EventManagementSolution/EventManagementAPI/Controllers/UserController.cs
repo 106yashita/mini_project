@@ -1,6 +1,7 @@
 ﻿using EventManagementAPI.Interfaces;
 using EventManagementAPI.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
@@ -10,6 +11,7 @@ namespace EventManagementAPI.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [Authorize(Roles = "user")]
+    [EnableCors("MyCors")]
     public class UserController : ControllerBase
     {
         private readonly IResponseService _responseService;
